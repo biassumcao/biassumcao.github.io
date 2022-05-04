@@ -39,7 +39,7 @@ body{
 input {               /*mudanca minha*/
     border:0;
     outline:0;
-}  
+}
 
 .menu input[type="search"],
 .menu input[type="search"]::placeholder{
@@ -74,6 +74,7 @@ input {               /*mudanca minha*/
     height: 24px; /*mudanca minha*/
     border-bottom: solid 1.08px rgb(177, 176, 176); /*mudanca minha*/
 }
+
 
 .menu .menu___header___profile label input{
     padding-left: 5%;
@@ -160,6 +161,27 @@ header.menu___header___profile > div:nth-child(1){
     justify-content: space-between;
 }
 
+.tasks{
+    flex-direction: column;
+}
+
+.task{
+    width: 90%;
+    height: 40px;
+    margin: 0.5% 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(220, 220, 220, 0.7);
+    border-radius: 5px;
+}
+
+.task:hover{
+    background: rgba(220, 220, 220);
+    cursor: pointer;
+}
+
+
 
 @media (min-width: 768px){  /*breakpoint*/
     .container{
@@ -181,3 +203,10 @@ header.menu___header___profile > div:nth-child(1){
 
 
 /*----------------------- main.container -----------------------*/
+
+/*------------------------------------------- mudança minha -------------------------------- */
+footer > form > label > input{
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+}
